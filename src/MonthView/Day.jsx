@@ -14,6 +14,7 @@ import { tileProps } from '../shared/propTypes';
 
 const className = 'react-calendar__month-view__days__day';
 
+
 const Day = ({
   calendarType,
   classes,
@@ -34,6 +35,7 @@ const Day = ({
     maxDateTransform={getEndOfDay}
     minDateTransform={getBeginOfDay}
     view="month"
+    customStyle='shefaly'
   >
     {getDay(date)}
   </Tile>

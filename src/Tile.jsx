@@ -21,6 +21,7 @@ const Tile = ({
   tileContent,
   tileDisabled,
   view,
+  customStyle
 }) => (
   <button
     className={mergeClassNames(
@@ -35,7 +36,7 @@ const Tile = ({
     onClick={onClick && (() => onClick(date))}
     onMouseOver={onMouseOver && (() => onMouseOver(date))}
     onFocus={onMouseOver && (() => onMouseOver(date))}
-    style={style}
+    style={style + (customStyle || ' default')}
     type="button"
   >
     <time dateTime={dateTime}>
